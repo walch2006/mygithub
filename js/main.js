@@ -6,10 +6,15 @@
 // 4. To try out cursor on your own projects, go to file menu (top left) and open a folder.
 
 
+// This code cannot be used in Node.js, it is meant to be used in a web page.
+// Please modify it accordingly.
 
+// const puppeteer = require("puppeteer");
+// const { LocalStorage } = require("node-localstorage");
+// const readline = require("readline");
+// const localStorage = new LocalStorage("./scratch");
 
-
-const localStorage = new LocalStorage("./scratch");
+const localStorage = window.localStorage;
 const storedUsername = localStorage.getItem("username");
 const storedPassword = localStorage.getItem("password");
 
