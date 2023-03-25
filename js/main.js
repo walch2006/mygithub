@@ -6,9 +6,9 @@
 // 4. To try out cursor on your own projects, go to file menu (top left) and open a folder.
 
 
-const puppeteer = require("puppeteer");
-const { LocalStorage } = require("node-localstorage");
-const readline = require("readline");
+
+
+
 const localStorage = new LocalStorage("./scratch");
 const storedUsername = localStorage.getItem("username");
 const storedPassword = localStorage.getItem("password");
